@@ -66,5 +66,5 @@ file_menu.add_command(label="Save", command=save_file)
 file_menu.add_separator()
 file_menu.add_command(label="Exit", command=root.quit)
 
-
+#starts and keeps the window open
 root.mainloop()
