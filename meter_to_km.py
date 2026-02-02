@@ -1,9 +1,12 @@
 from tkinter import *
 
 def meter_to_km():
-    meter= float(meter_input.get())
-    km = meter /1000
-    km_result_label.config(text=f"{km}")
+    try:
+        meter = float(meter_input.get())
+        km = meter / 1000
+        km_result_label.config(text=f"{km}")
+    except ValueError:
+        km_result_label.config(text="Invalid input")  # shows error instead of crashing
 
 
 window = Tk()
